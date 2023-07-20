@@ -1,0 +1,393 @@
+body {
+    font-family: 'Inter', sans-serif !important;
+}
+.navbar {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+}
+.nav-link {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+}
+.nav-item {
+    width: 140px !important;
+    text-align: center !important;
+    vertical-align: center !important;
+}
+.nav-link:active {
+    font-weight: 700 !important;
+}
+.icon {
+    width: fit-content;
+    height: 24px !important;
+    /* vertical-align: center !important; */
+}
+.dropdown-item:active {
+    background-color: #FB743E !important;
+    color: #FFFFFF;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.required {
+    color: #c7303f;
+}
+
+/* general */
+    
+    /* regular 400
+    medium 500
+    bold 700 */
+
+.header {
+    font-size: 32px !important;
+    font-weight: 700 !important;
+}
+.header-masuk {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+/* footer */
+.footer {
+    background-color: #FB743E !important;
+    color: white;
+    font-size: 12px;
+    padding: 40px 40px 40px 40px !important;
+}
+.tentang-p {
+    font-size: 16px;
+}
+.footer-section {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.footer-menu {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+.footer-link {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+/* button */
+.btn-1 {
+    background-color: #FB743E !important;
+    color: white !important;
+    font-weight: 500 !important;
+}
+.btn-2 {
+    border-color: #FB743E !important;
+    color: #FB743E !important;
+    font-weight: 500 !important;
+}
+.btn-3 {
+    border-color: white !important;
+    color: #FB743E !important;
+    font-weight: 500 !important;
+    text-decoration: underline !important;
+}
+.btn-4 {
+    border-color: #BABEC1 !important;
+    color: #383E56 !important;
+}
+.btn-disable {
+    background-color: #BABEC1 !important;
+    color: #FFFFFF !important;
+    pointer-events: none;
+}
+.btn-2-ukuran {
+    border-color: #FB743E !important;
+    color: #FB743E !important;
+    pointer-events: none;
+}
+
+/* status */
+.btn-hijau {
+    border-color: #B8DBCA !important;
+    color: #367A59 !important;
+    background-color: #F6F6F6 !important;
+    border-width: 2px !important;
+    pointer-events: none;
+}
+.btn-merah {
+    border-color: #EEB4B0 !important;
+    color: #CB3A31 !important;
+    background-color: #FFF4F2 !important;
+    border-width: 2px !important;
+    pointer-events: none;
+}
+.btn-kuning {
+    border-color: #EECEB0 !important;
+    color: #BF6919 !important;
+    background-color: #FFF9F2 !important;
+    border-width: 2px !important;
+    pointer-events: none;
+}
+.status-bayar{
+    font-weight: 500;
+}
+
+/* ulasan */
+.tanggal-ulasan {
+    font-style: italic !important;
+}
+.rule {
+    font-size: 14px;
+    color : #BABEC1;
+    /*margin-top : 6px;*/
+}
+
+/* tentang */
+.image-tentang {
+    margin-bottom: 40px;
+}
+.step-order {
+    border-radius: 12px !important;
+    border-style: solid;
+    border-color: #BABEC1 !important;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    font-size: 20px;
+    font-weight: 500;
+
+    width: 710px;
+}
+.kontak {
+    border-radius: 12px !important;
+    border-style: solid;
+    border-color: #BABEC1 !important;
+    
+    font-size: 20px;
+    font-weight: 500;
+    
+    width: 710px !important;
+
+}
+.link-ig {
+    color: #383E56;
+    text-decoration: none !important;
+}
+
+/* katalog */
+.filter {
+    width: 280px !important;
+    height: fit-content;
+    padding: 32px 32px 32px 32px !important;
+}
+.filter-title {
+    font-size: 20px;
+}
+.data-foto {
+    width: 80px;
+}
+.data-foto-jaket {
+    width: 100px;
+}
+.card-detail {
+    height: fit-content !important;
+    text-decoration: none;
+    color: #383E56;
+}
+.card-harga {
+    font-weight: 500 !important;
+}
+.radio {
+    margin-bottom: 4px !important;
+}
+
+/* semua ulasan */
+.nama-ulasan {
+    font-size: 20px;
+}
+
+/* detail jaket */
+.nama-jaket {
+    font-size: 32px;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+.harga-jaket {
+    color: #FB743E;
+    font-size: 40px;
+    margin-bottom: 12px;
+    text-decoration: none;
+}
+.nama-jaket-detail {
+    font-size: 36px;
+    margin-bottom: 4px;
+}
+.harga-jaket-detail{
+    color: #FB743E;
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+.nama-jaket-riwayat {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.harga-jaket-riwayat {
+    color: #FB743E;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.nama-jaket-keranjang {
+    font-size: 28px;
+    margin-bottom: 4px;
+}
+.harga-jaket-keranjang {
+    color: #FB743E;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+.label {
+    font-size: 24px;
+    font-weight: 700;
+}
+.detail {
+    font-size: 20px;
+}
+.info-section {
+    margin-bottom: 24px;
+}
+.info-label {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 4px;
+}
+.info-detail {
+    font-size: 20px;
+    font-weight: 500;
+}
+.label-form {
+    font-weight: 500;
+}
+
+/* keranjang */
+.detail-keranjang {
+    width: 100%;
+    text-decoration: none;
+}
+.harga {
+    color: #FB743E;
+    font-size: 40px;
+}
+.total {
+    color: #FB743E;
+    font-size: 40px;
+}
+.keranjang-alert {
+    font-weight: 500;
+    color: #FB743E !important;
+}
+.image-keranjang {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* detail riwayat */
+.detail-riwayat-jaket {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.detail-riwayat-harga {
+    font-size: 32px;
+    margin-bottom: 8px;
+    color: #FB743E;
+}
+
+/* pemesanan */
+.pemesanan-jaket {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+.pemesanan-harga {
+    font-size: 24px;
+    margin-bottom: 8px;
+    color: #FB743E;
+}
+
+/* pembayaran */
+.waktu {
+    font-size: 40px !important;
+    border-radius: 12px !important;
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+
+/* masuk */
+.link {
+    color: #FB743E;
+}
+
+/* foto profil */
+.foto-profil {
+    object-fit: cover !important;
+    border-radius: 50% !important; 
+    height: 140px !important;
+    width: 140px !important;
+}
+.foto-profil-semua-ulasan {
+    height: 40px !important;
+    width: 40px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important; 
+}
+.foto-profil-ulasan-landing {
+    object-fit: cover !important;
+    border-radius: 50% !important; 
+}
+.foto-profil-admin {
+    object-fit: cover !important;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+.dropdown-profil {
+    color: #FB743E !important;
+}
+.side-profil {
+    height: fit-content;
+    padding: 32px 32px 32px 32px !important;
+}
+/* .side-profil-option {
+    font-size: ;
+} */
+
+/* modal */
+.judul-modal {
+    font-size: 28px !important;
+    font-weight: 700;
+}
+.judul-modal-confirmation {
+    font-size: 28px !important;
+    font-weight: 400;
+}
+.terima {
+    color: #177d4e;
+}
+.tolak {
+    color: #c7303f;
+}
+.nama-jaket-detail-modal {
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+.harga-jaket-detail-modal {
+    color: #FB743E;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
