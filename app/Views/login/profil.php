@@ -46,11 +46,17 @@
 
                 <div class="my-3">
                     <label for="foto_profil" class="form-label label-foto">Ubah Foto Profil</label>
-                    <input type="file" class="form-control" id="foto_profil" name="foto_profil" aria-describedby="foto_profil" value="<?= $dataUser['foto_profil']; ?>" onchange="previewImg()">
-                    <div class="col-sm-4 mt-2">
-                        <img src="/Assets/fotojaket/default.png" class="img-preview foto-profil" alt="">
+                    <div class="d-flex">
+                        <div class="col-sm-4 mt-2">
+                            <img src="/Assets/fotojaket/default.png" class="img-preview foto-profil" alt="">
+                        </div>
+                        <div class="col align-self-center">
+                            <input type="file" class="form-control" id="foto_profil" name="foto_profil" aria-describedby="foto_profil" value="<?= $dataUser['foto_profil']; ?>" onchange="previewImg()">
+                            <div class="rule">Ukuran foto maks 5 MB</div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="my-3">
                     <label for="nama_lengkap" class="form-label">Nama Lengkap<span class="required">*</span></label>
                     <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" aria-describedby="nama_lengkap" value="<?= $dataUser['nama_lengkap']; ?>">

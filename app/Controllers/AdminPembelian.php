@@ -19,7 +19,11 @@ class AdminPembelian extends BaseController
     {
         $data = [
             'title' => 'Daftar Pemesanan | Admin Cooltreasure.id',
-            'pembelian' => $this->pembelianModel->getPembelian()
+            'pembelian' => $this->pembelianModel->getPembelian(),
+            'hariIni' => $this->pembelianModel->getHariIni(),
+            'bulanIni' => $this->pembelianModel->getBulanIni(),
+            'belumDiproses' => $this->pembelianModel->getBelumDiproses(),
+            'totalPesanan' => $this->pembelianModel->getTotalPesanan()
         ];
 
         return view('admin/daftarPembelian', $data);

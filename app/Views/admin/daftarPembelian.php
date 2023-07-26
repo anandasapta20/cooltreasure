@@ -7,6 +7,36 @@
             <div class="header text-center mb-4">Daftar Pemesanan</div>
         </div>
     </div>
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-2 text-center">
+            <h1 class="m-0 counter-pemesanan"><b><?= $hariIni; ?></b></h1>
+            <p class="m-0">Pesanan</p>
+            <h3>Hari Ini</h3>
+        </div>
+        <div class="col-2 text-center">
+            <h1 class="m-0 counter-pemesanan"><b><?= $bulanIni; ?></b></h1>
+            <p class="m-0">Pesanan</p>
+            <h3>Bulan Ini</h3>
+        </div>
+        <div class="col-auto text-center">
+            <h1 class="m-0 counter-pemesanan"><b><?= $belumDiproses; ?></b></h1>
+            <p class="m-0">Pesanan</p>
+            <h3>Belum Diproses</h3>
+        </div>
+        <div class="col-2 text-center">
+            <h1 class="m-0 counter-pemesanan"><b><?= $totalPesanan; ?></b></h1>
+            <p class="m-0">Pesanan</p>
+            <h3>Total</h3>
+        </div>
+    </div>
+
+    <div class="text-center mb-2">
+        <a href="<?php echo base_url('PdfController/htmlToPDF') ?>" class="btn btn-1">
+            Download PDF <img src="/Assets/icon/download.svg" alt="">
+        </a>
+    </div>
+
     <?php if (session()->getFlashdata('pesan')) : ?>
         <div class="alert alert-success" role="alert">
             <?= session()->getFlashdata('pesan'); ?>
@@ -14,9 +44,9 @@
     <?php endif; ?>
     <div class="row">
         <div class="col">
-            <table class="table">
+            <table class="table table-hover">
                 <thead>
-                    <tr>
+                    <tr class="table-head">
                         <th scope="col">No.</th>
                         <th scope="col">Nama Pemesan</th>
                         <th scope="col">Pemesanan Jaket</th>
@@ -99,7 +129,7 @@
                             <td>
                                 <div class="
                                 <?= ($p['status_pembayaran'] == 'Menunggu Pembayaran') ? 'btn btn-kuning' : ''; ?>
-                                <?= ($p['status_pembayaran'] == 'Menunggu Konfirmasi Admin') ? 'btn btn-hijau' : ''; ?>
+                                <?= ($p['status_pembayaran'] == 'Menunggu Konfirmasi Admin') ? 'btn btn-kuning' : ''; ?>
                                 <?= ($p['status_pembayaran'] == 'Barang Sedang Diproses') ? 'btn btn-hijau' : ''; ?>
                                 <?= ($p['status_pembayaran'] == 'Gagal') ? 'btn btn-merah' : ''; ?>
                                 <?= ($p['status_pembayaran'] == 'Batal') ? 'btn btn-merah' : ''; ?>

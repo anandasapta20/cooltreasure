@@ -112,6 +112,15 @@ input::-webkit-inner-spin-button {
     color: #FB743E !important;
     pointer-events: none;
 }
+.btn-2-counter {
+    border-color: #FB743E !important;
+    color: #FB743E !important;
+    pointer-events: none;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-radius: 16px !important;
+    border-width: 2px !important;
+}
 
 /* status */
 .btn-hijau {
@@ -391,3 +400,11 @@ input::-webkit-inner-spin-button {
     margin-bottom: 12px;
 }
 
+/* daftar pemesanan */
+.counter-pemesanan {
+    font-size: 64px !important;
+    color: #FB743E;
+}
+.table-head {
+    background-color: #FB743E !important;
+}

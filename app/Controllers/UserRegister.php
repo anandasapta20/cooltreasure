@@ -34,9 +34,10 @@ class UserRegister extends BaseController
                 ]
             ],
             'email' => [
-                'rules' => 'required|min_length[4]|max_length[255]|is_unique[user.email]',
+                'rules' => 'required|valid_email|min_length[4]|max_length[255]|is_unique[user.email]',
                 'errors' => [
-                    'required' => 'Email Harus diisi.',
+                    'required' => 'Email Harus Diisi.',
+                    'valid_email' => 'Email Tidak Valid.',
                     'min_length' => 'Email Minimal 4 Karakter.',
                     'max_length' => 'Email Maksimal 255 Karakter.',
                     'is_unique' => 'Email Sudah Terdaftar.'

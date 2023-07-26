@@ -46,13 +46,17 @@
                 </div>
                 <div class="custom-file mb-3">
                     <label for="foto_jaket" class="form-label label-foto">Foto Jaket<span class="required">*</span></label>
-                    <div class="input-group">
-                        <input type="file" class="form-control" id="foto_jaket" name="foto_jaket" aria-describedby="inputGroupFileAddon04" aria-label="Upload" onchange="previewImg()">
-                    </div>
-                    <div class="col-sm-4 mt-2">
-                        <img src="/Assets/fotoJaket/default.png" class="img-thumbnail img-preview" alt="">
+                    <div class="d-flex">
+                        <div class="col-sm-4">
+                            <img src="/Assets/fotojaket/default.png" class="img-thumbnail img-preview" alt="">
+                        </div>
+                        <div class="col align-self-center">
+                            <input type="file" class="form-control" id="foto_jaket" name="foto_jaket" aria-describedby="inputGroupFileAddon04" aria-label="Upload" onchange="previewImg()">
+                            <div class="rule">Ukuran foto maks 5 MB</div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="d-grid gap-2 mt-5">
                     <button type="submit" class="btn btn-1">Simpan</button>
                     <a href="/admin/daftarJaket" class="btn btn-2">Kembali</a>

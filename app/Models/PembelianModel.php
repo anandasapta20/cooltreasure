@@ -46,4 +46,36 @@ class PembelianModel extends Model
 
         // return $this->where(['id_order' => $id])->first();
     }
+
+    public function getHariIni()
+    {
+        return  $this->db->table('order')
+            ->where('tanggal_pembelian', date('Y-m-d'))
+            ->get()->getNumRows();
+    }
+
+    public function getBelumDiproses()
+    {
+        return  $this->db->table('order')
+            ->where('status_pembayaran', 'Menunggu Konfirmasi Admin')
+            ->get()->getNumRows();
+    }
+
+    public function getTotalPesanan()
+    {
+        return  $this->db->table('order')
+            ->get()->getNumRows();
+    }
+
+    public function getBulanIni()
+    {
+        return  $this->db->table('order')
+            ->like('tanggal_pembelian', date('Y-m'))
+            ->get()->getNumRows();
+    }
+
+    public function getTanggal()
+    {
+        return date('d-m-Y');
+    }
 }

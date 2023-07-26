@@ -107,11 +107,18 @@
             <form action="/pembayaran/update/<?= $dataPembayaran['id_order']; ?>" method="post" enctype="multipart/form-data">
                 <div class="my-4">
                     <label for="foto_bukti" class="form-label label-foto label-form">Bukti Pembayaran<span class="required">*</span></label>
-                    <input class="form-control" type="file" id="foto_bukti" name="foto_bukti" onchange="previewImgBayar()">
-                    <div class="col-sm-4 mt-2">
-                        <img src="/Assets/fotojaket/default.png" class="img-thumbnail img-preview" alt="">
+
+                    <div class="d-flex">
+                        <div class="col-sm-3 me-2">
+                            <img src="/Assets/fotojaket/default.png" class="img-thumbnail img-preview" alt="">
+                        </div>
+                        <div class="col align-self-center">
+                            <input class="form-control" type="file" id="foto_bukti" name="foto_bukti" onchange="previewImgBayar()">
+                            <div class="rule">Ukuran foto maks 5 MB</div>
+                        </div>
                     </div>
                 </div>
+
                 <span class="required">* Wajib diisi</span>
                 <div class="d-grid gap-2 mt-4">
                     <button class="btn btn-1" type="submit">Simpan</button>

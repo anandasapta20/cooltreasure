@@ -30,6 +30,10 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 
+// Pdf
+$routes->get('/createPdf', 'PdfController::index');
+$routes->match(['get', 'post'], 'PdfController/htmlToPDF', 'PdfController::htmlToPDF');
+
 // Not Login
 $routes->get('/', 'Home::index');
 $routes->get('/tentang', 'Home::tentang');

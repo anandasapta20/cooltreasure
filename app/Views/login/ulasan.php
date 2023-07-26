@@ -26,11 +26,17 @@
                 </div>
                 <div class="my-4">
                     <label for="foto_ulasan" class="form-label label-foto">Foto Ulasan<span class="required">*</span></label>
-                    <input class="form-control" type="file" id="foto_ulasan" name="foto_ulasan" onchange="previewImgUlasan()">
-                    <div class="col-sm-4 mt-2">
-                        <img src="/Assets/fotojaket/default.png" class="img-thumbnail img-preview" alt="">
+                    <div class="d-flex">
+                        <div class="col-sm-4 mt-2">
+                            <img src="/Assets/fotojaket/default.png" class="img-thumbnail img-preview" alt="">
+                        </div>
+                        <div class="col align-self-center">
+                            <input class="form-control" type="file" id="foto_ulasan" name="foto_ulasan" onchange="previewImgUlasan()">
+                            <div class="rule">Ukuran foto maks 5 MB</div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="form-check my-4">
                     <input class="form-check-input" type="checkbox" value="1" id="anonim" name="anonim" for="anonim">
                     <label class="form-check-label" for="anonim">
