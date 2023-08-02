@@ -39,7 +39,7 @@
 
             <div class="p-2">
                 <a href="/admin">
-                    <a href="/admin/keluar" class="btn btn-2 btn-outline mx-0">Keluar</a>
+                    <a href="/admin/keluar" class="btn btn-2 btn-outline mx-0">Keluar<img src="/Assets/icon/logout.svg" alt="" class="icon ms-2"></a>
                 </a>
             </div>
         </div>
