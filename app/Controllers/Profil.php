@@ -89,6 +89,54 @@ class Profil extends BaseController
 
     public function updateAlamat($id)
     {
+        if (!$this->validate([
+            'alamat' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Alamat Harus Diisi.'
+                ]
+            ],
+            'rt_rw' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'RT/RW Harus Diisi.'
+                ]
+            ],
+            'kelurahan_desa' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kelurahan/Desa Harus Diisi.'
+                ]
+            ],
+            'kecamatan' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kecamatan Harus Diisi.'
+                ]
+            ],
+            'kabupaten_kota' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kabupaten/Kota Harus Diisi.'
+                ]
+            ],
+            'provinsi' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Provinsi Harus Diisi.'
+                ]
+            ],
+            'kode_pos' => [
+                'rules' => 'required',
+                'errors' => [
+                    'required' => 'Kode Pos Harus Diisi.'
+                ]
+            ],
+        ])) {
+            session()->setFlashdata('error', $this->validator->listErrors());
+            return redirect()->to('/profil/dataPengiriman/' . $id)->withInput();
+        }
+
         $this->userModel->update($id, [
             'alamat' => $this->request->getVar('alamat'),
             'rt_rw' => $this->request->getVar('rt_rw'),
