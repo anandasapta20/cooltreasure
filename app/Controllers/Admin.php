@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use \App\Models\AdminModel;
+use \App\Models\UserModel;
 
 class Admin extends BaseController
 {
@@ -16,7 +17,7 @@ class Admin extends BaseController
 
     public function login()
     {
-        $admin = new AdminModel();
+        $admin = new UserModel();
         $email = $this->request->getVar('email');
         $password = $this->request->getVar('password');
         $dataAdmin = $admin->where([
@@ -24,9 +25,9 @@ class Admin extends BaseController
         ])->first();
 
         if ($dataAdmin) {
-            if ($dataAdmin['password'] == $password) {
+            if ($dataAdmin['password'] == $password && $dataAdmin['role'] = 'admin') {
                 session()->set([
-                    'id' => $dataAdmin['id'],
+                    'id' => $dataAdmin['id_user'],
                     'logged_in' => TRUE
                 ]);
                 return redirect()->to('/admin/daftarJaket');
